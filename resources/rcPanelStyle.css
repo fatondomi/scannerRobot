@@ -1,0 +1,272 @@
+
+
+
+#panel{
+    position: absolute;
+    height: 38%;
+    width: 34%;
+    right: 80px;
+    bottom: 80px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 70%, rgba(174,202,238,1) 100%); 
+    border: 1px solid darkblue;
+    border-radius: 7px;
+    box-shadow: 5px 10px 50px 10px #888888;
+}
+
+#txtBox{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    width: 50%;
+    border: 1px solid darkblue;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    padding: 1% 0;
+    font-size: 80%;
+    font-family: "Segoe UI";
+    overflow: hidden;
+}
+
+#topLeftScrew{
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    height: 10%;
+}
+
+#topRightScrew{
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    height: 10%;
+}
+
+#bottomLeftScrew{
+    position: absolute;
+    bottom: 4%;
+    left: 4%;
+    height: 10%;
+}
+
+#bottomRightScrew{
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+    height: 10%;
+}
+
+#powerSlider{
+    position: absolute;
+    top: 33%;
+    left: 30%;
+    width: 40%;
+    -webkit-appearance: none;
+    cursor: pointer;
+    height: 5%;
+    background: #d3d3d3;
+    outline: none;
+    border-radius: 100px;
+}
+
+#powerLabel{
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    width: 50%;
+    border: none;
+    text-align: center;
+    padding: 1% 0;
+    font-size: 80%;
+    font-family: "Segoe UI";
+    font-weight: 500;
+    cursor: "-webkit-grab";
+}
+
+#powerBtn{
+    position: absolute;
+    bottom: 10%;
+    right: 18%;
+    width: 12%;
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.35);
+    cursor: pointer;
+    border: 2px solid darkred;
+    border-radius: 50%;
+}
+
+#powerBtn:active{
+    box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.35);
+    transform: scale(0.95);
+}
+
+#powerBtn2{
+    position: absolute;
+    bottom: 35%;
+    right: 8%;
+    width: 12%;
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.35);
+    cursor: pointer;
+    border: 2px solid darkred;
+    border-radius: 50%;
+}
+
+#powerBtn2:active{
+    box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.35);
+    transform: scale(0.95);
+}
+
+#turnBtn{
+    position: absolute;
+    left: 49.5%;
+    bottom: 25%;
+    height: 10%;
+    width: 15%;
+    font-family: sans-serif;
+    font-size: 80%;
+    color: rgb(46, 46, 46);
+    text-shadow: 0px 0px 1px black;
+    outline: none;
+    border: 2px solid rgb(145, 86, 14);
+    border-radius: 13px;
+    background: rgb(236,226,77);
+    background: radial-gradient(circle, rgba(236,226,77,1) 40%, rgba(255,174,0,1) 80%);
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.35);
+    cursor: pointer;
+}
+
+#turnBtn:active{
+    box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.35);
+    transform: scale(0.95);
+}
+
+#turnBtn2{
+    position: absolute;
+    left: 49.5%;
+    bottom: 10%;
+    height: 10%;
+    width: 15%;
+    font-family: sans-serif;
+    font-size: 80%;
+    color:rgb(46, 46, 46);
+    text-shadow: 0px 0px 1px black;
+    outline: none;
+    border: 2px solid rgb(145, 86, 14);
+    border-radius: 13px;
+    background: rgb(236,226,77);
+    background: radial-gradient(circle, rgba(236,226,77,1) 40%, rgba(255,174,0,1) 80%);
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.35);
+    cursor: pointer;
+}
+
+#turnBtn2:active{
+    box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.35);
+    transform: scale(0.95);
+}
+
+#onlineLed{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 20%;
+    height: 1.5%;
+    border: 1px solid black;
+    background: darkred;
+    box-shadow: inset 0px 0px 2px 1px rgba(54, 3, 3, 0.5);
+}
+
+#turnCBtn{
+    position: absolute;
+    bottom: 25%;
+    left:30%;
+    height: 10%;
+    width: 15%;
+    font-family: sans-serif;
+    font-size: 80%;
+    color:rgb(46, 46, 46);
+    text-shadow: 0px 0px 1px black;
+    outline: none;
+    border: 2px solid rgb(145, 86, 14);
+    border-radius: 13px;
+    background: rgb(236,226,77);
+    background: radial-gradient(circle, rgba(236,226,77,1) 40%, rgba(255,174,0,1) 80%);
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.35);
+    cursor: pointer;
+}
+
+#turnCBtn:active{
+    box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.35);
+    transform: scale(0.95);
+}
+
+#turnCCBtn{
+    position: absolute;
+    bottom: 10%;
+    left:30%;
+    height: 10%;
+    width: 15%;
+    font-family: sans-serif;
+    font-size: 80%;
+    color:rgb(46, 46, 46);
+    text-shadow: 0px 0px 1px black;
+    outline: none;
+    border: 2px solid rgb(145, 86, 14);
+    border-radius: 13px;
+    background: rgb(236,226,77);
+    background: radial-gradient(circle, rgba(236,226,77,1) 40%, rgba(255,174,0,1) 80%);
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.35);
+    cursor: pointer;
+}
+
+#turnCCBtn:active{
+    box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.35);
+    transform: scale(0.95);
+}
+
+#scanBtn{
+    position: absolute;
+    bottom: 45%;
+    left:8%;
+    height: 12%;
+    width: 15%;
+    font-family: sans-serif;
+    font-size: 90%;
+    color:rgb(46, 46, 46);
+    text-shadow: 0px 0px 1px black;
+    outline: none;
+    border: 2px solid rgb(9, 116, 67);
+    border-radius: 13px;
+    background: rgb(77,226,236);
+    background: radial-gradient(circle, rgb(27, 187, 49) 40%, rgb(32, 148, 48) 80%);
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.35);
+    cursor: pointer;
+}
+
+#scanBtn:active{
+    box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.35);
+    transform: scale(0.95);
+}
+
+#aPilotBtn{
+    position: absolute;
+    bottom: 28%;
+    left:8%;
+    height: 12%;
+    width: 15%;
+    font-family: sans-serif;
+    font-size: 90%;
+    color:rgb(46, 46, 46);
+    text-shadow: 0px 0px 1px black;
+    outline: none;
+    border: 2px solid rgb(9, 116, 67);
+    border-radius: 13px;
+    background: rgb(77,226,236);
+    background: radial-gradient(circle, rgb(27, 187, 49) 40%, rgb(32, 148, 48) 80%);
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.35);
+    cursor: pointer;
+}
+
+#aPilotBtn:active{
+    box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.35);
+    transform: scale(0.95);
+}

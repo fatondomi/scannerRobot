@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Robot Interface</title>
+
+    <script src="resources/socket.io.js"></script>
+    <script src="resources/graphClass.js"></script>
+    <script src="resources/pageFunctions.js"></script>
+    <script src="resources/rcPanelFunctions.js"></script>
+    <link rel="stylesheet" href="resources/pageStyle.css"></link>
+    <link rel="stylesheet" href="resources/rcPanelStyle.css">
+</head>
+
+<body onkeydown="keyDown(event);" onkeyup="keyUp(event);">
+    <div id="gDiv"
+         onwheel="graph.onWheel(event);"
+         onmousemove="graph.onMouseMove(event);onPanelMouseMove(event);"
+         onmousedown="graph.onMouseDown();"
+         onmouseup="graph.onMouseUp();"
+         onmouseenter="graph.onMouseEnter();"
+         onmouseleave="graph.onMouseLeave();">
+        
+        <div id = "panel" onmousedown="onPanelMouseDown(event);"
+        onmouseup="onPanelMouseUp(event);">
+
+            <!-- head screws and keyboard enable txtBox-->
+            <p id="txtBox" onmousedown="txtBoxPressed(event);"
+            onmouseup="stopBubble(event);">Click here to enable keyboard input</p>
+            <img id="topLeftScrew" src="resources/screwhead.png">
+            <img id="topRightScrew" src="resources/screwhead.png">
+            <img id="bottomLeftScrew" src="resources/screwhead.png">
+            <img id="bottomRightScrew" src="resources/screwhead.png">
+
+            <!-- slider for power-->
+            <input type="range" min="0" max="1023" value="511" id="powerSlider"
+            onchange="sliderMoved();" onmousedown="stopBubble(event);">
+
+            <!-- power button -->
+            <img id="powerBtn" draggable="false" onmousedown="powerBtnPressed(event);"
+            onmouseup="btnReleased(event);" src="resources/red.png">
+            <!-- reverse power button -->
+            <img id="powerBtn2" draggable="false" onmousedown="powerBtn2Pressed(event);"
+            onmouseup="btnReleased(event);" src="resources/red2.png">
+
+            <!-- turn right button -->
+            <button id="turnBtn" onmousedown="turnBtnPressed(event);"
+            onmouseup="btnReleased(event);">Right</button>
+            <!-- turn left button -->
+            <button id="turnBtn2" onmousedown="turnBtn2Pressed(event);"
+            onmouseup="btnReleased(event);">Left</button>
+
+            <h4 id="powerLabel">Power : 511</h4>
+
+            <div id="onlineLed"></div>
+
+            <!-- turn stepper clockwise -->
+            <button id="turnCBtn" onmousedown="turnCPressed(event);"
+            onmouseup="btnReleased(event)">Turn C</button>
+            <!-- turn stepper counter clockwise -->
+            <button id="turnCCBtn" onmousedown="turnCCPressed(event);"
+            onmouseup="btnReleased(event);">Turn CC</button>
+
+            <!-- scan 180 -->
+            <button id="scanBtn" onmousedown="scanPressed(event);"
+            onmouseup="stopBubble(event);">Scan</button>
+
+            <!-- auto pilot -->
+            <button id="aPilotBtn" onmousedown="aPilotPressed(event);"
+            onmouseup="stopBubble(event);">A-Pilot</button>
+        </div>
+    </div>
+
+    <script src="resources/setup.js"></script>
+</body>
+
+</html>

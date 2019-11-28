@@ -1,0 +1,24 @@
+{
+  "name": "robotserver",
+  "version": "1.0.0",
+  "description": "server for http and socket communcation",
+  "main": "server.js",
+  "scripts": {
+    "test": "start",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/fatondomi/scannerrobot"
+  },
+  "keywords": [
+    "scan",
+    "robot",
+    "server"
+  ],
+  "author": "Faton Domi",
+  "license": "ISC",
+  "devDependencies": {
+    "socket.io": "^2.2.0"
+  }
+}
