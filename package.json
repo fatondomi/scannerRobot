@@ -19,6 +19,6 @@
   "author": "Faton Domi",
   "license": "ISC",
   "devDependencies": {
-    "socket.io": "^2.2.0"
+    "socket.io": "^2.5.0"
   }
 }
